@@ -36,6 +36,7 @@ client_scripts {'autopilot.lua',}
    
 
 <h1>Example</h1>
+
 ```lua
 autopilot:activateAutopilot(GetPlayerPed(), GetVehiclePedIsIn(GetPlayerPed()), 2000, 1573, 2000, 250, true, GetEntityModel(GetVehiclePedIsIn(GetPlayerPed())))
 ```
