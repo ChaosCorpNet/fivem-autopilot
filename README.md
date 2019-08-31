@@ -13,7 +13,7 @@ client_scripts {'autopilot.lua',}
 ```
   
 <h3>3. Call functions</h3>
-   To enable the autopilot use: 
+   Enable:
    
    ```lua
    autopilot:activateAutopilot(pilot, plane, x, y, z, speed, autospeed, model)
@@ -34,9 +34,23 @@ client_scripts {'autopilot.lua',}
    
    `model` is the planes model name, which you can get with `GetEntityModel(GetVehiclePedIsIn(GetPlayerPed()))`
    
+   Disable:
+   
+   ```lua
+   autopilot:deactivateAutopilot(pilot)
+   ```
+`pilot` is the Pilots Player Entity, which you can get with `GetPlayerPed()`
 
 <h1>Example</h1>
 
+Enable:
+
 ```lua
 autopilot:activateAutopilot(GetPlayerPed(), GetVehiclePedIsIn(GetPlayerPed()), 2000, 1573, 2000, 250, true, GetEntityModel(GetVehiclePedIsIn(GetPlayerPed())))
+```
+
+Disable:
+
+```lua
+autopilot:deactivateAutopilot(GetPlayerPed())
 ```
