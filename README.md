@@ -1,4 +1,4 @@
-# fivem-autopilot
+# FiveM Autopilot [DISCONTINUED]
 A simple autopilot Lua class for fiveM planes
 <h1>Installation</h1>
 
